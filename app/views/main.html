@@ -5,7 +5,7 @@
   <form role="form" ng-submit="addSecurity()">
     <div class="row">
       <div class="input-group">
-        <input type="text" ng-model="etf" placeholder="Add a security here" class="form-control">
+        <input type="text" ng-model="security" placeholder="Add a security here" class="form-control">
         <span class="input-group-btn">
           <input type="submit" class="btn btn-primary" value="Add">
         </span>
@@ -14,15 +14,15 @@
   </form>
   <p></p>
 
-  <div id="etfs" ng-model="etf">
+  <div id="etfs" ng-model="security">
 
     <p class="form-group" ng-repeat="security in securities">
-      {{security}}
+      Security: {{security}}
     </p>
   </div>
-  <div style="background-color:blue; color:white;">
+  <div>
     <p class="form-group" ng-repeat="etf in etfs">
-      {{etf}}
+      Etf: {{etf}}
     </p>
 
 

@@ -9,7 +9,14 @@ angular.module('advisorframeApp')
     $scope.mfs = [];
 
     $scope.addSecurity = function () {
-    	$scope.securities.push($scope.etf)
+        var userInput = $scope.security;
+
+        // if (userInput = )
+
+    	$scope.securities.push(userInput);
+
+        console.log(userInput);
+        console.log('security ^^ ');
     	$scope.etf = '';
 
 
