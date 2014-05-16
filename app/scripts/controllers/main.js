@@ -9,6 +9,7 @@ angular.module('advisorframeApp')
     $scope.mfs = [];
 
     $scope.addSecurity = function () {
+<<<<<<< HEAD
         var userInput = $scope.security;
 
         // if (userInput = )
@@ -18,7 +19,23 @@ angular.module('advisorframeApp')
         console.log(userInput);
         console.log('security ^^ ');
     	$scope.etf = '';
+=======
+>>>>>>> 5b50619592a7a2e61b652ba37bfbe80eaad22517
 
+        var myRadioButton = $scope.securityType;
+
+        if (myRadioButton == "etf"){
+    		$scope.etfs.push($scope.security);
+    		$scope.security = '';
+    	}
+        else (myRadioButton == "common") {
+            $scope.commons.push($scope.security);
+            $scope.security = '';
+        }
+        else (myRadioButton == "mf") {
+            $scope.mfs.push($scope.security);
+            $scope.security = '';
+        };
 
     };       
 
